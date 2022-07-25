@@ -23,7 +23,6 @@ def index():
                   Text="Example of message: "
                   body = {"Text":Text, "Header":"Warning", "TimeoutMs": 20000}
                   x = requests.post(url, json = body)
-                  print(x)
    return ''
 
 if __name__ == '__main__':
