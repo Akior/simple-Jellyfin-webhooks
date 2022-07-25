@@ -19,7 +19,6 @@ def index():
    session = big_data[0]["Id"]
    print(user+" with device_id: "+device+" start session_id: "+session+" with action: "+action)
    if (action == "PlaybackStart"):
-                  #Ваша подписка действительна до:
                   url = server+"/Sessions/"+session+"/Message?&api_key="+api_key
                   Text="Example of message: "
                   body = {"Text":Text, "Header":"Warning", "TimeoutMs": 20000}
